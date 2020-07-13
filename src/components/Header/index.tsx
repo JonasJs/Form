@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Title, Wrapper } from './styles';
 
-interface IHeaderProps {
-  children: String;
-}
-
-const Header: React.FC<IHeaderProps> = ({ children }) => (
-  <Container>{children}</Container>
+const Header: React.FC = ({ children }) => (
+  <Container>
+    <Wrapper>
+      <Title>{children}</Title>
+    </Wrapper>
+  </Container>
 );
 
 export default Header;
